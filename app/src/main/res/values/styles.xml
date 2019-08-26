@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="title_style">
+    <style name="titleStyle">
         <item name="android:layout_marginTop">@dimen/layout_margin</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:paddingTop">@dimen/small_padding</item>

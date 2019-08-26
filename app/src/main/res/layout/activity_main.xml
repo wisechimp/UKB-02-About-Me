@@ -9,11 +9,31 @@
 
     <TextView
         android:id="@+id/profile_title_tv"
-        style="@style/title_style"
+        style="@style/titleStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/subjects_name"
         android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/profile_nickname_edit_text"
+        style="@style/titleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:hint="@string/profile_nickname_hint"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/profile_nickname_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:text="@string/profile_nickname_save_butt" />
 
     <ImageView
         android:id="@+id/profile_image_iv"
@@ -23,6 +43,15 @@
         android:contentDescription="@string/star_image_alt_txt"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
+    <TextView
+        android:id="@+id/profile_nickname_tv"
+        style="@style/titleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:text="" />
+
     <ScrollView
         android:id="@+id/profile_sv"
         android:layout_width="match_parent"
@@ -30,7 +59,7 @@
 
         <TextView
             android:id="@+id/profile_text_tv"
-            style="@style/title_style"
+            style="@style/titleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"

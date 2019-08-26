@@ -12,4 +12,6 @@
         \n\nIt was filmed in black and white as this is pretty much obligatory for filming in France.
         \n\nHe also created the \"Mate, Mate, Indicate!\" series of ads for the DVLA.
     </string>
+    <string name="profile_nickname_hint">Nickname</string>
+    <string name="profile_nickname_save_butt">Save</string>
 </resources>
