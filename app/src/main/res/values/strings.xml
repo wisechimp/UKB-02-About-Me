@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="subjects_name">Monkey the Magnificent</string>
+    <string name="star_image_alt_txt">A star for a star</string>
 </resources>
