@@ -1,27 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/subjects_name_tv"
+        android:id="@+id/profile_title_tv"
+        style="@style/title_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/subjects_name"
-        android:textAlignment="center"
-        style="@style/title_style" />
+        android:textAlignment="center" />
 
     <ImageView
-        android:id="@+id/star_image"
+        android:id="@+id/profile_image_iv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_margin"
         android:contentDescription="@string/star_image_alt_txt"
         app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <ScrollView
+        android:id="@+id/profile_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profile_text_tv"
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:lineSpacingMultiplier="@dimen/text_line_spacing"
+            android:paddingStart="@dimen/small_padding"
+            android:paddingTop="@dimen/small_padding"
+            android:paddingEnd="@dimen/small_padding"
+            android:text="@string/profile_text" />
+    </ScrollView>
 
 </LinearLayout>

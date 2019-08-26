@@ -2,4 +2,14 @@
     <string name="app_name">About Me</string>
     <string name="subjects_name">Monkey the Magnificent</string>
     <string name="star_image_alt_txt">A star for a star</string>
+    <string name="profile_text">
+        Lots and lots of text here about how great Monkey is.
+        \n\nMore text here about Monkey\'s magnificence.
+        \n\nAnd so on and so on until we get down to the end of the page.
+        \n\nMonkey likes eating bananas.
+        \n\nHe hopes one day to exterminate everybody who irritates him.
+        \n\nHe created a magnificent ad about milk for the French Milk Marketing Board.
+        \n\nIt was filmed in black and white as this is pretty much obligatory for filming in France.
+        \n\nHe also created the \"Mate, Mate, Indicate!\" series of ads for the DVLA.
+    </string>
 </resources>
