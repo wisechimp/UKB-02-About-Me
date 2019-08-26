@@ -1,73 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/profile_title_tv"
-        style="@style/titleStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/subjects_name"
-        android:textAlignment="center" />
+    <data>
 
-    <EditText
-        android:id="@+id/profile_nickname_edit_text"
-        style="@style/titleStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        android:hint="@string/profile_nickname_hint"
-        android:importantForAutofill="no" />
+        <variable
+            name="userName"
+            type="com.wisechimp.aboutme.ProfileData" />
+    </data>
 
-    <Button
-        android:id="@+id/profile_nickname_butt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:textColor="@android:color/white"
-        android:layout_gravity="center"
-        android:text="@string/profile_nickname_save_butt" />
-    
-    <TextView
-        android:id="@+id/profile_nickname_tv"
-        style="@style/titleStyle"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:textAlignment="center"
-        android:text="" />
-
-    <ImageView
-        android:id="@+id/profile_image_iv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:contentDescription="@string/star_image_alt_txt"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <ScrollView
-        android:id="@+id/profile_sv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <TextView
-            android:id="@+id/profile_text_tv"
+            android:id="@+id/profile_title_tv"
             style="@style/titleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:lineSpacingMultiplier="@dimen/text_line_spacing"
-            android:paddingStart="@dimen/small_padding"
-            android:paddingTop="@dimen/small_padding"
-            android:paddingEnd="@dimen/small_padding"
-            android:text="@string/profile_text" />
-    </ScrollView>
+            android:text="@={userName.name}"
+            android:textAlignment="center" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/profile_nickname_edit_text"
+            style="@style/titleStyle"
+            android:fontFamily="@font/roboto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/profile_nickname_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/profile_nickname_butt"
+            android:fontFamily="@font/roboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="@string/profile_nickname_save_butt"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/profile_nickname_tv"
+            style="@style/titleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={userName.nickname}"
+            android:textAlignment="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/profile_image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:contentDescription="@string/star_image_alt_txt"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ScrollView
+            android:id="@+id/profile_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/profile_text_tv"
+                style="@style/titleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:lineSpacingMultiplier="@dimen/text_line_spacing"
+                android:paddingStart="@dimen/small_padding"
+                android:paddingTop="@dimen/small_padding"
+                android:paddingEnd="@dimen/small_padding"
+                android:text="@string/profile_text" />
+        </ScrollView>
+    </LinearLayout>
+</layout>
