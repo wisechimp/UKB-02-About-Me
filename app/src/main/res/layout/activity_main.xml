@@ -34,15 +34,7 @@
         android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:text="@string/profile_nickname_save_butt" />
-
-    <ImageView
-        android:id="@+id/profile_image_iv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/layout_margin"
-        android:contentDescription="@string/star_image_alt_txt"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
+    
     <TextView
         android:id="@+id/profile_nickname_tv"
         style="@style/titleStyle"
@@ -51,6 +43,14 @@
         android:visibility="gone"
         android:textAlignment="center"
         android:text="" />
+
+    <ImageView
+        android:id="@+id/profile_image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:contentDescription="@string/star_image_alt_txt"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ScrollView
         android:id="@+id/profile_sv"
