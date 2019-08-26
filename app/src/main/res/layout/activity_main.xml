@@ -78,7 +78,7 @@
                 android:paddingStart="@dimen/small_padding"
                 android:paddingTop="@dimen/small_padding"
                 android:paddingEnd="@dimen/small_padding"
-                android:text="@string/profile_text" />
+                android:text="@={userName.bio}" />
         </ScrollView>
     </LinearLayout>
 </layout>

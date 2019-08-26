@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        userName = ProfileData(getString(R.string.subjects_name))
+        userName = ProfileData(getString(R.string.subjects_name), "", getString(R.string.profile_text))
         binding.userName = userName
 
         binding.profileNicknameButt.setOnClickListener {
